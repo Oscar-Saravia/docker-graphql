@@ -40,7 +40,7 @@ jobs:
         NEW_VERSION: ${{ steps.version.outputs.version }}
       run: |
         docker build -t osaraviav1/docker-graphql:$NEW_VERSION .
-        docker build -t osaraviav1/docker-graphql:latest .
+        # docker build -t osaraviav1/docker-graphql:latest .
       
 
     - name: Push Docker image
@@ -48,4 +48,4 @@ jobs:
         NEW_VERSION: ${{ steps.version.outputs.version }}
       run: |
         docker push osaraviav1/docker-graphql:$NEW_VERSION
-        docker push osaraviav1/docker-graphql:latest
+        # docker push osaraviav1/docker-graphql:latest
