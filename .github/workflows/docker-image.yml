@@ -27,8 +27,10 @@ jobs:
         echo "End login"
 
     - name: Build the Docker image
-      run: docker build -t osaraviav1/docker-graphql:0.0.2 .
+      # run: docker build -t osaraviav1/docker-graphql:0.0.2 .
+      run: docker build -t osaraviav1/docker-graphql:latest .
 
     - name: Push Docker image
       run: |
-        docker push osaraviav1/docker-graphql:0.0.2
+        # docker push osaraviav1/docker-graphql:0.0.2
+        docker push osaraviav1/docker-graphql:latest
