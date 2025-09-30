@@ -1,8 +1,8 @@
 {
-  "name": "todo",
+  "name": "todo test",
   "version": "1.1.1-rc-9",
   "description": "",
-  "author": "",
+  "author": "me",
   "private": true,
   "license": "UNLICENSED",
   "scripts": {
